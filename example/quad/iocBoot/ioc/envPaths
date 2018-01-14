@@ -1,0 +1,3 @@
+epicsEnvSet("IOC","ioc")
+epicsEnvSet("TOP","/home/niklas/git/rust-in-epics/example/quad")
+epicsEnvSet("EPICS_BASE","/home/niklas/git/epics-base")

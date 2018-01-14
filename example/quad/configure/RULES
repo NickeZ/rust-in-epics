@@ -1,0 +1,8 @@
+# RULES
+
+include $(CONFIG)/RULES
+
+USR_CPPFLAGS = -I${EPICS_BASE}/include/compiler/clang
+
+# Library should be rebuilt because LIBOBJS may have changed.
+$(LIBNAME): ../Makefile

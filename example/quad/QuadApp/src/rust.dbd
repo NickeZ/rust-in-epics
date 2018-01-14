@@ -1,0 +1,3 @@
+# provide definitions such as
+function(mySubProcess)
+function(mySubInit)

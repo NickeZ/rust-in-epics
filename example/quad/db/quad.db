@@ -1,0 +1,8 @@
+record(ai, "INPUT") {
+    field(FLNK, "HELLORUST")
+}
+record(sub, "HELLORUST") {
+    field(SNAM, "mySubProcess")
+    field(INAM, "mySubInit")
+    field(INPA, "INPUT")
+}

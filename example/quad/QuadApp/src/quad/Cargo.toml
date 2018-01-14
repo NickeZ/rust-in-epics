@@ -1,0 +1,13 @@
+[package]
+name = "quad"
+version = "0.1.0"
+authors = ["Niklas Claesson <nicke.claesson@gmail.com>"]
+
+[lib]
+crate-type = ["dylib", "staticlib"]
+
+[dependencies]
+epics-sys = {path = "/home/niklas/git/epics-sys"}
+
+[build-dependencies]
+bindgen = "0.32.1"
