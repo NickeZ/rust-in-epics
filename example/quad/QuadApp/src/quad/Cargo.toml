@@ -7,7 +7,7 @@ authors = ["Niklas Claesson <nicke.claesson@gmail.com>"]
 crate-type = ["dylib", "staticlib"]
 
 [dependencies]
-epics-sys = {path = "/home/niklas/git/epics-sys"}
+epics-sys = "*"
 
 [build-dependencies]
 bindgen = "0.32.1"
