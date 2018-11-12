@@ -32,12 +32,11 @@ Quad_SRCS_vxWorks += -nil-
 #Quad_OBJS_vxWorks += $(EPICS_BASE_BIN)/vxComLibrary
 
 Quad_LDFLAGS += -pthread
-
 Quad_SYS_LIBS += dl
+Quad_LIBS += quad
 
 # Finally link to the EPICS Base libraries
 Quad_LIBS += $(EPICS_BASE_IOC_LIBS)
-Quad_LIBS += quad
 
 quad_DIR = ${TOP}/QuadApp/src/quad/target/release
 
