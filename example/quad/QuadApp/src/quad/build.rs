@@ -5,7 +5,7 @@ use std::path::PathBuf;
 use std::string::String;
 
 fn main() {
-    let epics_base = PathBuf::from(env::var("EPICS_BASE").unwrap_or("/home/niklas/git/epics-base".into()));
+    let epics_base = PathBuf::from(env::var("EPICS_BASE").unwrap_or("/usr/local/epics/base".into()));
 
     let mut epics_include = epics_base.clone();
     epics_include.push("include");

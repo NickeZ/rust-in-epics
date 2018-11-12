@@ -39,7 +39,7 @@ Quad_SYS_LIBS += dl
 Quad_LIBS += $(EPICS_BASE_IOC_LIBS)
 Quad_LIBS += quad
 
-quad_DIR = ${TOP}/QuadApp/src/quad/target/debug
+quad_DIR = ${TOP}/QuadApp/src/quad/target/release
 
 #===========================
 
@@ -47,3 +47,5 @@ include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE
 
+$(quad_DIR)/libquad.so $(quad_DIR)/libquad.a: ${TOP}/QuadApp/src/quad/src/lib.rs
+	cargo build --release --manifest-path ${TOP}/QuadApp/src/quad/Cargo.toml
